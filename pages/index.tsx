@@ -8,7 +8,7 @@ import Offer from '../src/components/Offer/Offer';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Laboratorium protetyczne | ASGOLAB</title>
         <meta
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 };
 

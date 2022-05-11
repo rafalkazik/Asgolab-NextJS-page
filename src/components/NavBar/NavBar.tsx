@@ -5,12 +5,13 @@ const NavBar = () => {
   return (
     <nav className='navbar'>
       <div className='navbar-container'>
-        <Image
-          src='/ASGOLAB_logo.svg'
-          height='100%'
-          width='100%'
-          alt='ASGOLAB logo'
-        />
+        <Link to='hero' spy={true} smooth={true} offset={0} duration={500}>
+          <img
+            src='/ASGOLAB_logo.svg'
+            alt='ASGOLAB logo'
+            className='navbar__logo'
+          />
+        </Link>
         <div className='navbar__menu menu'>
           <ul className='menu__list'>
             <li className='menu__list-item'>
