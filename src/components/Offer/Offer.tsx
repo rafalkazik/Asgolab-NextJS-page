@@ -1,6 +1,6 @@
 const Offer = () => {
   return (
-    <div>
+    <div className='offer' id='offer'>
       <div>OFFER</div>
     </div>
   );
