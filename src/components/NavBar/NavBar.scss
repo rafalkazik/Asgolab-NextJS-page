@@ -2,7 +2,6 @@
 
 .navbar {
   width: 100%;
-  position: sticky;
   top: 0;
   left: 0;
   color: colors.$greenColor;
@@ -11,7 +10,7 @@
   justify-content: center;
 
   .navbar-container {
-    padding: clamp(2rem, 3vw, 4rem) 0;
+    padding: clamp(1.4rem, 3vw, 4rem) 0;
     width: 90%;
     height: 100%;
     max-height: 112px;
@@ -21,6 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     .navbar__logo {
       width: 20vw;
@@ -44,8 +44,10 @@
         text-transform: uppercase;
 
         .menu__list-item {
+          transition: 0.2s ease-in-out;
           &:hover {
             cursor: pointer;
+            color: colors.$blueColor;
           }
         }
       }

@@ -1,4 +1,7 @@
 // Small tablets (portrait view)
+$screen-sm-min: 425px;
+
+// Small tablets (portrait view)
 $screen-md-min: 768px;
 
 // Tablets and small desktops
@@ -8,4 +11,7 @@ $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
 // desktops
-$screen-xxl-min: 1440px;
+$screen-xxl-min: 1300px;
+
+// desktops
+$screen-xxxl-min: 1440px;
