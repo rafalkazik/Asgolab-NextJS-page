@@ -11,6 +11,12 @@ html {
   font-size: 10px;
   background-color: colors.$whiteColor;
 
+  header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+
   body {
     font-family: 'Inter', sans-serif;
 

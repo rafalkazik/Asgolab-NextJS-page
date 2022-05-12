@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav className='navbar'>
       <div className='navbar-container'>
-        <Link to='hero' spy={true} smooth={true} offset={0} duration={500}>
+        <Link to='hero' spy={true} smooth={true} offset={-112} duration={500}>
           <img
             src='/ASGOLAB_logo.svg'
             alt='ASGOLAB logo'
@@ -19,7 +19,7 @@ const NavBar = () => {
                 to='offer'
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-112}
                 duration={500}
               >
                 Oferta
@@ -30,7 +30,7 @@ const NavBar = () => {
                 to='contact'
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-112}
                 duration={500}
               >
                 Kontakt
