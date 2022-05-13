@@ -1,7 +1,175 @@
 @use '../../../styles/colors.scss';
+@use '../../../styles/mixins.scss';
+
 .offer {
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   background-color: colors.$whiteColor;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  color: colors.$greenColor;
+  display: flex;
+  justify-content: center;
+
+  .offer-container {
+    width: 90%;
+    margin: 4rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1568px;
+    @include mixins.lg {
+      margin: 10rem 0;
+    }
+
+    .offer__header {
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      z-index: 0;
+
+      @include mixins.lg {
+        margin-bottom: 5rem;
+      }
+
+      .offer__header-text {
+        font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      }
+    }
+
+    .offer__accordion {
+      .accordion__offer-list {
+        .offer-list__item {
+          border-top: 1px solid colors.$greenColor;
+          z-index: 2;
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            top: -0.25rem;
+            left: 0;
+            border-top: 5px solid colors.$greenColor;
+            width: 60%;
+            z-index: 0;
+
+            @include mixins.md {
+              width: 40%;
+            }
+          }
+
+          .offer-list__category {
+            .offer-list__toggle {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 2rem 0;
+              position: relative;
+              z-index: 2;
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              .offer-list__toggle-title {
+                text-transform: uppercase;
+                font-size: clamp(1.6rem, 2vw, 3.2rem);
+                font-weight: 600;
+                transition: 0.3s ease-in-out;
+              }
+
+              .offer-list__toggle-button-container {
+                display: flex;
+                background-color: colors.$whiteColor;
+                border: none;
+                color: colors.$greenColor;
+                text-transform: uppercase;
+                align-items: center;
+
+                &:hover {
+                  cursor: pointer;
+                }
+
+                .offer-list__toggle-button-text {
+                  display: none;
+
+                  @include mixins.md {
+                    display: block;
+                    margin-right: 2rem;
+                  }
+                }
+                .offer-list__toggle-button-arrow {
+                  transition: 0.2s ease-in-out;
+                  margin-right: 1rem;
+                }
+                .offer-list__toggle-button-arrow--active {
+                  transition: 0.2s ease-in-out;
+                  margin-right: 1rem;
+                  transform: rotate(180deg);
+                }
+              }
+            }
+
+            .offer-list__content {
+              padding: 2rem 0 4rem 0;
+              border-top: 1px solid colors.$greyColor;
+              height: auto;
+              // overflow: hidden;
+              display: none;
+
+              .offer-list__content-title {
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+                @include mixins.md {
+                  width: 40%;
+                }
+              }
+              .offer-list__content-text {
+                @include mixins.md {
+                  width: 40%;
+                }
+              }
+
+              &:nth-child(2) {
+                border: none;
+              }
+
+              @include mixins.md {
+                // display: flex;
+                display: none;
+              }
+            }
+
+            .offer-list__content--active {
+              padding: 2rem 0 4rem 0;
+              border-top: 1px solid colors.$greyColor;
+              height: auto;
+              // overflow: hidden;
+
+              .offer-list__content-title {
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+                @include mixins.md {
+                  width: 40%;
+                }
+              }
+              .offer-list__content-text {
+                @include mixins.md {
+                  width: 40%;
+                }
+              }
+
+              &:nth-child(2) {
+                border: none;
+              }
+
+              @include mixins.md {
+                display: flex;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
