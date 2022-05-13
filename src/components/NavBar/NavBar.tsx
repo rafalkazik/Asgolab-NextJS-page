@@ -18,7 +18,7 @@ const NavBar = () => {
                 to='offer'
                 spy={true}
                 smooth={true}
-                offset={-112}
+                offset={-50}
                 duration={500}
               >
                 Oferta
@@ -29,7 +29,7 @@ const NavBar = () => {
                 to='contact'
                 spy={true}
                 smooth={true}
-                offset={-112}
+                offset={-50}
                 duration={500}
               >
                 Kontakt

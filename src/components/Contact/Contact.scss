@@ -1,7 +1,126 @@
 @use '../../../styles/colors.scss';
+@use '../../../styles/mixins.scss';
+
 .contact {
   width: 100%;
   height: 100%;
-  min-height: 100vh;
+  // min-height: 85vh;
   background-color: colors.$blueColor;
+  color: colors.$greenColor;
+  display: flex;
+  justify-content: center;
+  // z-index: -1;
+  font-size: clamp(1.2rem, 2.3vw, 1.6rem);
+  position: relative;
+
+  &::after {
+    @include mixins.md {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: url('../../../public/Contact_lines.svg');
+      background-position: 10% 0%;
+      background-repeat: no-repeat;
+      background-size: auto;
+      // overflow: hidden;
+    }
+
+    @include mixins.lg {
+      background-position: -40% 0%;
+    }
+
+    @include mixins.xl {
+      background-position: -100% 0%;
+    }
+
+    @include mixins.xxl {
+      background-position: 100% 0%;
+
+      // background-size: 10% 100%;
+    }
+  }
+
+  .contact-container {
+    width: 90%;
+    margin: 3rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1568px;
+    @include mixins.lg {
+      margin: 7rem 0;
+    }
+
+    .contact__header {
+      z-index: 0;
+
+      .contact__header-text {
+        text-transform: uppercase;
+      }
+    }
+
+    .contact__content {
+      height: 100%;
+
+      .contact__content-text {
+        font-size: clamp(2rem, 4vw, 4.8rem);
+        font-weight: 300;
+        margin-top: 3rem;
+
+        @include mixins.md {
+          width: 60%;
+        }
+        @include mixins.lg {
+          width: 60%;
+        }
+        @include mixins.xl {
+          width: 45%;
+        }
+        @include mixins.xxl {
+          width: 45%;
+        }
+        @include mixins.xxxl {
+          width: 53%;
+        }
+      }
+
+      .contact__content-button {
+        text-transform: uppercase;
+        background-color: colors.$blueColor;
+        color: colors.$greenColor;
+        border: none;
+        border-radius: 20px;
+        outline: 1px solid colors.$greenColor;
+        padding: 1.6rem 3.2rem;
+        font-size: clamp(1.2rem, 2.3vw, 1.6rem);
+        margin: 2.5rem 0 7rem 0;
+        z-index: 1;
+        position: relative;
+        transition: 0.2s ease-in-out;
+
+        @include mixins.md {
+          margin-top: 5rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: colors.$greenColor;
+          color: colors.$blueColor;
+        }
+      }
+    }
+
+    .contact__data {
+      height: 100%;
+
+      @include mixins.md {
+        margin-top: 5rem;
+      }
+
+      .contact__data-text {
+        margin: 1rem 0;
+      }
+    }
+  }
 }
