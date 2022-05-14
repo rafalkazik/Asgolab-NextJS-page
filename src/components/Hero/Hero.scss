@@ -94,6 +94,7 @@
         background-color: colors.$blueColor;
         color: colors.$greenColor;
         border: none;
+        border: 1px solid transparent;
         border-radius: 20px;
         padding: 1.6rem 3.2rem;
         font-size: clamp(1.2rem, 2.3vw, 1.6rem);
@@ -101,12 +102,18 @@
         z-index: 1;
         position: relative;
         transition: 0.2s ease-in-out;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
 
         &:hover {
           cursor: pointer;
           background-color: colors.$greenColor;
           color: colors.$blueColor;
-          outline: 1px solid colors.$blueColor;
+
+          border: 1px solid colors.$blueColor;
         }
       }
     }

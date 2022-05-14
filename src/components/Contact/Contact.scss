@@ -91,13 +91,18 @@
         color: colors.$greenColor;
         border: none;
         border-radius: 20px;
-        outline: 1px solid colors.$greenColor;
+        border: 1px solid colors.$greenColor;
         padding: 1.6rem 3.2rem;
         font-size: clamp(1.2rem, 2.3vw, 1.6rem);
         margin: 2.5rem 0 7rem 0;
         z-index: 1;
         position: relative;
         transition: 0.2s ease-in-out;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
 
         @include mixins.md {
           margin-top: 5rem;
@@ -107,6 +112,7 @@
           cursor: pointer;
           background-color: colors.$greenColor;
           color: colors.$blueColor;
+          border: 1px solid transparent;
         }
       }
     }
