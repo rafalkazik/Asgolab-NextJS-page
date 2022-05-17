@@ -103,6 +103,8 @@
         -webkit-background-clip: padding-box;
         -moz-background-clip: padding;
         background-clip: padding-box;
+        width: 80%;
+        max-width: 280px;
 
         @include mixins.md {
           margin-top: 5rem;
