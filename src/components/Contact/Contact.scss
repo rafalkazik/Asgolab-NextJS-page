@@ -2,28 +2,25 @@
 @use '../../../styles/mixins.scss';
 
 .contact {
-  width: 100%;
-  height: 100%;
-  // min-height: 85vh;
   background-color: colors.$blueColor;
   color: colors.$greenColor;
   display: flex;
-  justify-content: center;
-  // z-index: -1;
   font-size: clamp(1.2rem, 2.3vw, 1.6rem);
+  height: 100%;
+  justify-content: center;
   position: relative;
+  width: 100%;
 
   &::after {
     @include mixins.md {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 100%;
       background: url('../../../public/Contact_lines.svg');
       background-position: 10% 0%;
       background-repeat: no-repeat;
       background-size: auto;
-      // overflow: hidden;
+      content: '';
+      height: 100%;
+      position: absolute;
+      width: 100%;
     }
 
     @include mixins.lg {
@@ -36,18 +33,17 @@
 
     @include mixins.xxl {
       background-position: 100% 0%;
-
-      // background-size: 10% 100%;
     }
   }
 
   .contact-container {
-    width: 90%;
-    margin: 3rem 0;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin: 3rem 0;
     max-width: 1568px;
+    width: 90%;
+
     @include mixins.lg {
       margin: 7rem 0;
     }
@@ -56,6 +52,7 @@
       z-index: 0;
 
       .contact__header-text {
+        font-size: clamp(1.2rem, 2.5vw, 1.6rem);
         text-transform: uppercase;
       }
     }
@@ -71,40 +68,44 @@
         @include mixins.md {
           width: 60%;
         }
+
         @include mixins.lg {
           width: 60%;
         }
+
         @include mixins.xl {
           width: 45%;
         }
+
         @include mixins.xxl {
           width: 45%;
         }
+
         @include mixins.xxxl {
           width: 53%;
         }
       }
 
       .contact__content-button {
-        text-transform: uppercase;
-        background-color: colors.$blueColor;
-        color: colors.$greenColor;
-        border: none;
-        border-radius: 20px;
-        border: 1px solid colors.$greenColor;
-        padding: 1.6rem 3.2rem;
-        font-size: clamp(1.2rem, 2.3vw, 1.6rem);
-        margin: 2.5rem 0 7rem 0;
-        z-index: 1;
-        position: relative;
-        transition: 0.2s ease-in-out;
-        -webkit-border-radius: 20px;
+        -moz-background-clip: padding;
         -moz-border-radius: 20px;
         -webkit-background-clip: padding-box;
-        -moz-background-clip: padding;
+        -webkit-border-radius: 20px;
         background-clip: padding-box;
-        width: 80%;
+        background-color: colors.$blueColor;
+        border-radius: 20px;
+        border: none;
+        border: 1px solid colors.$greenColor;
+        color: colors.$greenColor;
+        font-size: clamp(1.2rem, 2.3vw, 1.6rem);
+        margin: 2.5rem 0 7rem 0;
         max-width: 280px;
+        padding: 1.6rem 3.2rem;
+        position: relative;
+        text-transform: uppercase;
+        transition: 0.2s ease-in-out;
+        width: 80%;
+        z-index: 1;
 
         @include mixins.md {
           margin-top: 5rem;
@@ -113,8 +114,8 @@
         &:hover {
           cursor: pointer;
           background-color: colors.$greenColor;
-          color: colors.$blueColor;
           border: 1px solid transparent;
+          color: colors.$blueColor;
         }
       }
     }

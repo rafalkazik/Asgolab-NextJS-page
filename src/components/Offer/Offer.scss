@@ -2,28 +2,29 @@
 @use '../../../styles/mixins.scss';
 
 .offer {
-  width: 100%;
-  height: 100%;
   background-color: colors.$whiteColor;
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
   color: colors.$greenColor;
   display: flex;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  height: 100%;
   justify-content: center;
+  width: 100%;
 
   .offer-container {
-    width: 90%;
-    margin: 4rem 0;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin: 4rem 0;
     max-width: 1568px;
+    width: 90%;
+
     @include mixins.lg {
       margin: 10rem 0;
     }
 
     .offer__header {
-      text-transform: uppercase;
       margin-bottom: 3rem;
+      text-transform: uppercase;
       z-index: 0;
 
       @include mixins.lg {
@@ -39,16 +40,16 @@
       .accordion__offer-list {
         .offer-list__item {
           border-top: 1px solid colors.$greenColor;
-          z-index: 2;
           position: relative;
+          z-index: 2;
 
           &::before {
-            content: '';
-            position: absolute;
-            height: 100%;
-            top: -0.25rem;
-            left: 0;
             border-top: 5px solid colors.$greenColor;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: -0.25rem;
             width: 60%;
             z-index: 0;
 
@@ -59,13 +60,14 @@
 
           .offer-list__category {
             transition: 0.5s linear;
+
             .offer-list__toggle {
-              width: 100%;
+              align-items: center;
               display: flex;
               justify-content: space-between;
-              align-items: center;
               padding: 2rem 0;
               position: relative;
+              width: 100%;
               z-index: 2;
 
               &:hover {
@@ -73,19 +75,19 @@
               }
 
               .offer-list__toggle-title {
-                text-transform: uppercase;
                 font-size: clamp(1.6rem, 2vw, 3.2rem);
                 font-weight: 600;
+                text-transform: uppercase;
                 transition: 0.3s ease-in-out;
               }
 
               .offer-list__toggle-button-container {
-                display: flex;
-                background-color: colors.$whiteColor;
-                border: none;
-                color: colors.$greenColor;
-                text-transform: uppercase;
                 align-items: center;
+                border: none;
+                background-color: colors.$whiteColor;
+                color: colors.$greenColor;
+                display: flex;
+                text-transform: uppercase;
 
                 &:hover {
                   cursor: pointer;
@@ -100,34 +102,35 @@
                   }
                 }
                 .offer-list__toggle-button-arrow {
-                  transition: 0.2s ease-in-out;
                   margin-right: 1rem;
+                  transition: 0.2s ease-in-out;
                 }
                 .offer-list__toggle-button-arrow--active {
-                  transition: 0.2s ease-in-out;
                   margin-right: 1rem;
                   transform: rotate(180deg);
+                  transition: 0.2s ease-in-out;
                 }
               }
             }
 
             .offer-list__content {
-              // padding: 2rem 0 4rem 0;
               border-top: 1px solid colors.$greyColor;
+              display: flex;
+              flex-direction: column;
               height: 0;
               opacity: 0;
               overflow: hidden;
-              display: flex;
-              flex-direction: column;
               transition: all 0.2s ease-in-out;
 
               .offer-list__content-title {
-                text-transform: uppercase;
                 margin-bottom: 1.5rem;
+                text-transform: uppercase;
+
                 @include mixins.md {
                   width: 40%;
                 }
               }
+
               .offer-list__content-text {
                 @include mixins.md {
                   width: 40%;
@@ -144,22 +147,24 @@
             }
 
             .offer-list__content--active {
-              padding: 2rem 0 4rem 0;
               border-top: 1px solid colors.$greyColor;
-              height: 100%;
               display: flex;
               flex-direction: column;
+              height: 100%;
               opacity: 1;
               overflow: visible;
+              padding: 2rem 0 4rem 0;
               transition: all 0.2s ease-in-out;
 
               .offer-list__content-title {
-                text-transform: uppercase;
                 margin-bottom: 1.5rem;
+                text-transform: uppercase;
+
                 @include mixins.md {
                   width: 40%;
                 }
               }
+
               .offer-list__content-text {
                 @include mixins.md {
                   width: 40%;

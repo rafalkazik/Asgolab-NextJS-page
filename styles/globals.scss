@@ -8,14 +8,14 @@
 }
 
 html {
-  font-size: 10px;
   background-color: colors.$whiteColor;
+  font-size: 10px;
 
   header {
-    width: 100%;
     position: sticky;
-    z-index: 4;
     top: 0;
+    width: 100%;
+    z-index: 4;
   }
 
   body {
