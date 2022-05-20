@@ -1,9 +1,20 @@
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-scroll';
 
 const NavBar = () => {
+  const navRef = useRef<HTMLDivElement | any>();
+  const [navHeight, setNavHeight] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNavHeight(navRef.current.clientHeight);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [navHeight]);
+
   return (
     <nav className='navbar'>
-      <div className='navbar-container'>
+      <div className='navbar-container' ref={navRef}>
         <Link to='hero' spy={true} smooth={true} offset={-112} duration={500}>
           <img
             src='/ASGOLAB_logo.svg'
@@ -18,7 +29,7 @@ const NavBar = () => {
                 to='offer'
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-navHeight}
                 duration={500}
               >
                 Oferta
@@ -29,7 +40,7 @@ const NavBar = () => {
                 to='contact'
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-navHeight}
                 duration={500}
               >
                 Kontakt

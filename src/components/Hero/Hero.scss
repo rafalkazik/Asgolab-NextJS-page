@@ -14,12 +14,11 @@
 
   .hero__content-background-desktop {
     bottom: 50%;
-    height: auto;
     position: absolute;
     left: 0;
-    right: auto;
+    right: 0;
     transform: rotate(-90deg);
-    width: auto;
+    width: 100%;
 
     @include mixins.md {
       display: flex;
@@ -40,10 +39,7 @@
       }
 
       @include mixins.xxl {
-        right: -100px;
-      }
-      @include mixins.xxxl {
-        right: 0;
+        right: -110px;
       }
     }
   }
@@ -65,7 +61,7 @@
 
       .hero__content-text {
         color: colors.$whiteColor;
-        font-size: clamp(2rem, 4vw, 4.6rem);
+        font-size: clamp(2rem, 4vw, 4.8rem);
         font-weight: 200;
 
         @include mixins.md {
@@ -83,6 +79,7 @@
         border: none;
         border: 1px solid transparent;
         color: colors.$greenColor;
+        font-family: 'Inter', sans-serif;
         font-size: clamp(1.2rem, 2.3vw, 1.6rem);
         margin: 2.5rem 0 4rem 0;
         overflow: hidden;
@@ -97,6 +94,10 @@
           border: 1px solid colors.$blueColor;
           color: colors.$blueColor;
           cursor: pointer;
+        }
+
+        @include mixins.lg {
+          margin: 4.8rem 0 7rem 0;
         }
       }
     }

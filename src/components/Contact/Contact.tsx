@@ -1,9 +1,28 @@
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Lottie from 'lottie-web';
 
 const Contact = () => {
+  const backgroundDesktop = useRef<any>(null);
+
+  useEffect(() => {
+    const instance = Lottie.loadAnimation({
+      container: backgroundDesktop.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'HeroLinesDesktop_2.json',
+    });
+    return () => instance.destroy();
+  });
+
   return (
     <div className='contact' id='contact'>
       <div className='contact-container'>
+        <div
+          className='contact__content-background-desktop'
+          ref={backgroundDesktop}
+        />
         <header className='contact__header'>
           <h5 className='contact__header-text'>Kontakt</h5>
         </header>
