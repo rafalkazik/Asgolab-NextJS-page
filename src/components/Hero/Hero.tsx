@@ -35,6 +35,7 @@ const Hero = () => {
             smooth={true}
             offset={-112}
             duration={500}
+            href={'/offer'}
           >
             <button className='hero__content-button'>
               Poznaj zakres usług
