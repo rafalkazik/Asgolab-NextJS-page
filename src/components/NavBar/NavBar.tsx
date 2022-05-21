@@ -8,14 +8,21 @@ const NavBar = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setNavHeight(navRef.current.clientHeight);
-    }, 2000);
+    }, 1500);
     return () => clearInterval(interval);
   }, [navHeight]);
 
   return (
     <nav className='navbar'>
       <div className='navbar-container' ref={navRef}>
-        <Link to='hero' spy={true} smooth={true} offset={-112} duration={500}>
+        <Link
+          to='hero'
+          spy={true}
+          smooth={true}
+          offset={-112}
+          duration={500}
+          href={'/'}
+        >
           <img
             src='/ASGOLAB_logo.svg'
             alt='ASGOLAB logo'
@@ -31,6 +38,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-navHeight}
                 duration={500}
+                href={'/offer'}
               >
                 Oferta
               </Link>
@@ -42,6 +50,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-navHeight}
                 duration={500}
+                href={'/contact'}
               >
                 Kontakt
               </Link>
