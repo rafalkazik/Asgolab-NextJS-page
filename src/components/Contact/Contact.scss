@@ -112,6 +112,10 @@
         @include mixins.xxxl {
           width: 53%;
         }
+
+        .separator {
+          display: inline-block;
+        }
       }
 
       .contact__content-button {
