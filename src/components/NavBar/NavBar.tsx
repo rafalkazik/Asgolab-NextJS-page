@@ -1,13 +1,16 @@
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-scroll';
+import { NavContext } from '../../Context/navContext';
 
 const NavBar = () => {
   const navRef = useRef<HTMLDivElement | any>();
   const [navHeight, setNavHeight] = useState(0);
+  const heightData: any = useContext(NavContext);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setNavHeight(navRef.current.clientHeight);
+      heightData.setNavHeightContext(navRef.current.clientHeight);
     }, 1500);
     return () => clearInterval(interval);
   }, [navHeight]);

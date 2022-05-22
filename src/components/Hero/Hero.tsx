@@ -1,9 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useContext } from 'react';
 import { Link } from 'react-scroll';
 import Lottie from 'lottie-web';
+import { NavContext } from '../../Context/navContext';
 
 const Hero = () => {
   const backgroundDesktop = useRef<any>(null);
+  const heightData: any = useContext(NavContext);
 
   useEffect(() => {
     const instance = Lottie.loadAnimation({
@@ -25,15 +27,16 @@ const Hero = () => {
         />
         <div className='hero__content'>
           <h1 className='hero__content-text'>
-            Laboratorium protetyczne specjalizujące się w usługach zakresu
-            nowoczesnej techniki dentystyczne CAD/CAM, znajdujące się w centrum
-            Tychów.
+            Laboratorium protetyczne specjalizujące{' '}
+            <span className='separator'>się w usługach</span> zakresu
+            nowoczesnej techniki dentystyczne CAD/CAM, znajdujące{' '}
+            <span className='separator'>się w</span> centrum Tychów.
           </h1>
           <Link
             to='offer'
             spy={true}
             smooth={true}
-            offset={-112}
+            offset={-heightData.navHeightContext}
             duration={500}
             href={'/offer'}
           >

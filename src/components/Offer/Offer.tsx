@@ -1,7 +1,4 @@
 import { useState } from 'react';
-import { firstOfferData } from './OfferData';
-import { secondOfferData } from './OfferData';
-import { thirdOfferData } from './OfferData';
 
 const Offer = () => {
   const [active1, setActive1] = useState(false);
@@ -10,15 +7,12 @@ const Offer = () => {
 
   const toggleAccordion1 = () => {
     setActive1(!active1);
-    console.log(active1);
   };
   const toggleAccordion2 = () => {
     setActive2(!active2);
-    console.log(active2);
   };
   const toggleAccordion3 = () => {
     setActive3(!active3);
-    console.log(active3);
   };
 
   return (
@@ -48,19 +42,89 @@ const Offer = () => {
                     />
                   </button>
                 </div>
-                {firstOfferData.map((item) => (
-                  <div
-                    className={
-                      active1 === false
-                        ? 'offer-list__content'
-                        : 'offer-list__content--active'
-                    }
-                    key={item.id}
-                  >
-                    <p className='offer-list__content-title'>{item.title}</p>
-                    <p className='offer-list__content-text'>{item.content}</p>
-                  </div>
-                ))}
+                <div
+                  className={
+                    active1 === false
+                      ? 'offer-list__content'
+                      : 'offer-list__content--active'
+                  }
+                >
+                  <p className='offer-list__content-title'>
+                    Korony i mosty na cyrkonie
+                  </p>
+                  <p className='offer-list__content-text'>
+                    Korona cyrkonowa jest koronką wykonaną
+                    <span className='separator'> na podbudowie z </span> tlenku
+                    cyrkonu, który jest krystalicznym ciałem stałym odpornym
+                    chemicznie{' '}
+                    <span className='separator'> oraz materiałem </span>{' '}
+                    biozgodnym. Korony{' '}
+                    <span className='separator'> i mosty </span>{' '}
+                    <span className='separator'> na tlenku </span> cyrkonu są
+                    bardzo wytrzymałe{' '}
+                    <span className='separator'>na zginanie</span>, trwałe{' '}
+                    <span className='separator'>i elastyczne</span>. Materiał
+                    doskonale jest tolerowany przez organizm ludzki. Cyrkon daje
+                    efekt autentycznej przezierności naturalnie zdrowego zęba
+                    ludzkiego.
+                  </p>
+                </div>
+                <div
+                  className={
+                    active1 === false
+                      ? 'offer-list__content'
+                      : 'offer-list__content--active'
+                  }
+                >
+                  <p className='offer-list__content-title'>
+                    Korony Porcelanowe na metalu
+                  </p>
+                  <p className='offer-list__content-text'>
+                    Pozwalają <span className='separator'>na stworzenie </span>{' '}
+                    naturalnego{' '}
+                    <span className='separator'>i estetycznego</span>{' '}
+                    uzupełnienia, które pacjent utracił{' '}
+                    <span className='separator'>w wyniku</span> zniszczenia
+                    zębów stałych (np. patologicznego starcia zębów,{' '}
+                    <span className='separator'>po leczeniu</span> kanałowym).
+                    Odbudowę można również zamocować{' '}
+                    <span className='separator'>na implancie</span>{' '}
+                    <span className='separator'>co spowoduje</span> odtworzenie
+                    brakującego zęba. Koronę porcelanową można osadzić{' '}
+                    <span className='separator'>na implancie</span>{' '}
+                    zacementowanym{' '}
+                    <span className='separator'>na łączniku </span>{' '}
+                    implantologicznym{' '}
+                    <span className='separator'>albo na oszlifowanym</span>{' '}
+                    filarze zęba własnego.
+                  </p>
+                </div>
+                <div
+                  className={
+                    active1 === false
+                      ? 'offer-list__content'
+                      : 'offer-list__content--active'
+                  }
+                >
+                  <p className='offer-list__content-title'>Most protetyczny</p>
+                  <p className='offer-list__content-text'>
+                    Most protetyczny{' '}
+                    <span className='separator'>to uzupełnienie</span> stałe
+                    brakujących luk <span className='separator'>w łuku </span>{' '}
+                    zębowym. Most składa{' '}
+                    <span className='separator'>się przynajmniej</span>{' '}
+                    <span className='separator'>z dwóch </span> koron
+                    protetycznych osadzonych{' '}
+                    <span className='separator'>na oszlifowanych</span> filarach
+                    zębów własnych{' '}
+                    <span className='separator'>oraz przęsła</span>{' '}
+                    <span className='separator'>lub przęseł</span> brakujących
+                    zębów. Popularność tej metody wynika{' '}
+                    <span className='separator'>z połączenia</span>
+                    {''} estetyki{' '}
+                    <span className='separator'>z funkcjonalnością</span>.
+                  </p>
+                </div>
               </div>
             </li>
             <li className='offer-list__item'>
@@ -84,19 +148,35 @@ const Offer = () => {
                     />
                   </button>
                 </div>
-                {secondOfferData.map((item) => (
-                  <div
-                    className={
-                      active2 === false
-                        ? 'offer-list__content'
-                        : 'offer-list__content--active'
-                    }
-                    key={item.id}
-                  >
-                    <p className='offer-list__content-title'>{item.title}</p>
-                    <p className='offer-list__content-text'>{item.content}</p>
-                  </div>
-                ))}
+
+                <div
+                  className={
+                    active2 === false
+                      ? 'offer-list__content'
+                      : 'offer-list__content--active'
+                  }
+                >
+                  <p className='offer-list__content-title'>Implanty</p>
+                  <p className='offer-list__content-text'>
+                    Zakres naszej współpracy obejmuje także protetykę{' '}
+                    <span className='separator'>na implantach</span> (łączniki
+                    implantologiczne). Implanty wszczepia{' '}
+                    <span className='separator'>się u pacjentów</span>, którzy
+                    utracili własne zęby{' '}
+                    <span className='separator'>aby zastąpić</span> im “korzeń
+                    zęba”. Implant wszczepia{' '}
+                    <span className='separator'>się w kość</span> szczęki{' '}
+                    <span className='separator'>lub żuchwy</span>{' '}
+                    <span className='separator'>aby stały</span>{' '}
+                    <span className='separator'>się filarem</span> odbudowanego
+                    zęba, <span className='separator'>czy też stanowiły</span>{' '}
+                    podporę <span className='separator'>w moście</span>{' '}
+                    <span className='separator'>lub implanty</span> stają{' '}
+                    <span className='separator'>się elementem</span>{' '}
+                    <span className='separator'>do mocowania</span> wyjmowanych
+                    protez ruchomych.
+                  </p>
+                </div>
               </div>
             </li>
             <li className='offer-list__item'>
@@ -120,19 +200,74 @@ const Offer = () => {
                     />
                   </button>
                 </div>
-                {thirdOfferData.map((item) => (
-                  <div
-                    className={
-                      active3 === false
-                        ? 'offer-list__content'
-                        : 'offer-list__content--active'
-                    }
-                    key={item.id}
-                  >
-                    <p className='offer-list__content-title'>{item.title}</p>
-                    <p className='offer-list__content-text'>{item.content}</p>
-                  </div>
-                ))}
+
+                <div
+                  className={
+                    active3 === false
+                      ? 'offer-list__content'
+                      : 'offer-list__content--active'
+                  }
+                >
+                  <p className='offer-list__content-title'>Proteza z Acronu</p>
+                  <p className='offer-list__content-text'>
+                    Proteza wykonana <span className='separator'>z Acronu</span>{' '}
+                    może być używana{' '}
+                    <span className='separator'>przez pacjenta</span>, bez
+                    ograniczeń czasowych, nawet kilka lat. Ogromny atut protezy{' '}
+                    <span className='separator'>z acronu</span>{' '}
+                    <span className='separator'>to estetyczne</span> klamry{' '}
+                    <span className='separator'>w kolorze</span> dziąsła, dzięki
+                    temu idealnie komponują{' '}
+                    <span className='separator'>się w ustach</span> pacjenta{' '}
+                    <span className='separator'>i nie</span>{' '}
+                    <span className='separator'>są widoczne.</span>{' '}
+                  </p>
+                </div>
+                <div
+                  className={
+                    active3 === false
+                      ? 'offer-list__content'
+                      : 'offer-list__content--active'
+                  }
+                >
+                  <p className='offer-list__content-title'>Proteza z Acetalu</p>
+                  <p className='offer-list__content-text'>
+                    Acetal jest materiałem przeznaczonym{' '}
+                    <span className='separator'>do wykonania</span> konstrukcji
+                    protez{' '}
+                    <span className='separator'>
+                      podpartych – szkieletowych.
+                    </span>{' '}
+                    Protezy wykonuje{' '}
+                    <span className='separator'>się metodą</span> wtrysku{' '}
+                    <span className='separator'>pod ciśnieniem.</span> Klamry{' '}
+                    <span className='separator'>w protezie</span>{' '}
+                    <span className='separator'>z acetalu</span> mają kolor
+                    zębów <span className='separator'>co poprawia </span>
+                    estetykę.
+                  </p>
+                </div>
+                <div
+                  className={
+                    active3 === false
+                      ? 'offer-list__content'
+                      : 'offer-list__content--active'
+                  }
+                >
+                  <p className='offer-list__content-title'>
+                    Proteza z Vitaplexu
+                  </p>
+                  <p className='offer-list__content-text'>
+                    Proteza <span className='separator'>z Vitaplexu</span>{' '}
+                    posiada dwukrotnie większą wytrzymałości mechaniczną{' '}
+                    <span className='separator'>niż proteza</span> akrykowa.
+                    Eliminuje skurcz{' '}
+                    <span className='separator'>co wpływa</span>{' '}
+                    <span className='separator'>na lepsze</span> utrzymanie
+                    protezy <span className='separator'>w jamie</span> ustnej,
+                    lżejsza, delikatniejsza, bardziej komfortowa.
+                  </p>
+                </div>
               </div>
             </li>
           </ul>

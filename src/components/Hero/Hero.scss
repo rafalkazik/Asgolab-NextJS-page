@@ -64,6 +64,10 @@
         font-size: clamp(2rem, 4vw, 4.8rem);
         font-weight: 200;
 
+        .separator {
+          display: inline-block;
+        }
+
         @include mixins.md {
           width: 55%;
         }
