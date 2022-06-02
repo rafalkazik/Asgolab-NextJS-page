@@ -1,7 +1,7 @@
 import { useEffect, useRef, useContext } from 'react';
 import { Link } from 'react-scroll';
 import Lottie from 'lottie-web';
-import { NavContext } from '../../Context/navContext';
+import { NavContext } from '../../Context/NavContext';
 
 const Hero = () => {
   const backgroundDesktop = useRef<any>(null);

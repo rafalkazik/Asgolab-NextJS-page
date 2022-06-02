@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-scroll';
-import { NavContext } from '../../Context/navContext';
+import { NavContext } from '../../Context/NavContext';
 
 const NavBar = () => {
   const navRef = useRef<HTMLDivElement | any>();

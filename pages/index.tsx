@@ -6,7 +6,7 @@ import Footer from '../src/components/Footer/Footer';
 import Hero from '../src/components/Hero/Hero';
 import NavBar from '../src/components/NavBar/NavBar';
 import Offer from '../src/components/Offer/Offer';
-import { NavContext } from '../src/Context/navContext';
+import { NavContext } from '../src/Context/NavContext';
 
 const Home: NextPage = () => {
   const [navHeightContext, setNavHeightContext] = useState<any>();
