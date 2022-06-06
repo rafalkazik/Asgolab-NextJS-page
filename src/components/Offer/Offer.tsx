@@ -318,16 +318,16 @@ const Offer = () => {
                     <span className='separator'>to rozwiązania</span>{' '}
                     protetyczne przypominające korony. Inlay oznacza wkład,
                     natomiast onlay nakład.{' '}
-                    <span className='separator'>W obu</span>
-                    przypadkach ząb jest odbudowywany{' '}
+                    <span className='separator'>W obu</span> przypadkach ząb
+                    jest odbudowywany{' '}
                     <span className='separator'>za pomocą</span> kompozytowego
                     elementu, który ma zastąpić koronę zęba. Stosując inlay{' '}
                     <span className='separator'>i onlay</span> techniczny
-                    odbudowujemy bardzo dużą powierzchnię zęba
+                    odbudowujemy bardzo dużą powierzchnię zęba{' '}
                     <span className='separator'>co umożliwia</span> długotrwałe
                     funkcjonowanie{' '}
-                    <span className='separator'>oraz zmniejsza</span>
-                    ryzyka złamania zęba{' '}
+                    <span className='separator'>oraz zmniejsza</span> ryzyka
+                    złamania zęba{' '}
                     <span className='separator'>w odróżnieniu</span>{' '}
                     <span className='separator'>od zwykłego</span> wypełnienia
                     światłoutwardzalnego.
