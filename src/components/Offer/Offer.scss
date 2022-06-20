@@ -132,9 +132,12 @@
               }
 
               .offer-list__content-text {
-                font-size: clamp(1.4rem, 2.5vw, 2rem);
                 @include mixins.md {
                   width: 40%;
+                }
+
+                .separator {
+                  white-space: nowrap;
                 }
               }
 
@@ -171,14 +174,15 @@
               }
 
               .offer-list__content-text {
-                font-size: clamp(1.4rem, 2.5vw, 2rem);
+                font-size: 1.4rem;
+
                 @include mixins.md {
+                  font-size: 2rem;
                   width: 40%;
                 }
 
                 .separator {
-                  display: inline-block;
-                  font-size: clamp(1.4rem, 2.5vw, 2rem);
+                  white-space: nowrap;
                 }
               }
 

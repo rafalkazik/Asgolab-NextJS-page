@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ASGOLAB NextJS Page
 
-## Getting Started
+## :technologist: About project:
 
-First, run the development server:
+Website created for the client's needs in the field of dental technology.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Technologies and metodologies used in this project:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**React / NextJS / TypeScript / LottieFiles Animation / BEM / RWD (Mobile first)**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+#### :clapper: Check live version: **[LIVE](http://asgolab.com.pl/)**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Graphic design: [Szymon Golis](https://www.behance.net/szymongolis)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## :gear: Installation
 
-## Learn More
+The project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). To run the app on your device you should install all dependencies. Then create a localhost port and run your web explorer.
 
-To learn more about Next.js, take a look at the following resources:
+Let's start with installing all dependencies. Move to the app main workspace and run:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    npm i
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To create a localhost port you should type:
 
-## Deploy on Vercel
+    npm start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Our repositories search engine is ready at port 3000.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    http://localhost:3000/
+
+## :mailbox: Feel free to contact me
+
+You can find me on **[LINKEDIN](https://www.linkedin.com/in/rafa%C5%82-kazik-924b8710a/)**

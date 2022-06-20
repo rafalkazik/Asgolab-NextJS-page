@@ -66,7 +66,7 @@ const Offer = () => {
                   </p>
                   <p className='offer-list__content-text'>
                     Korona cyrkonowa{' '}
-                    <span className='separator'>jest koroną</span> wykonaną{' '}
+                    <span className='separator'>jest koroną </span> wykonaną{' '}
                     <span className='separator'>na podbudowie</span>{' '}
                     <span className='separator'>z tlenku</span> cyrkonu, który{' '}
                     <span className='separator'>jest krystalicznym</span> ciałem
