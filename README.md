@@ -6,7 +6,7 @@ Website created for the client's needs in the field of dental technology.
 
 Technologies and metodologies used in this project:
 
-**React / NextJS / TypeScript / LottieFiles Animation / BEM / RWD (Mobile first)**
+**React / NextJS / TypeScript / SCSS / LottieFiles Animation / BEM / RWD (Mobile first)**
 
 #### :clapper: Check live version: **[LIVE](http://asgolab.com.pl/)**
 
