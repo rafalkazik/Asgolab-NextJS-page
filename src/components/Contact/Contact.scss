@@ -26,43 +26,22 @@
       width: auto;
 
       @include mixins.lg {
-        right: -250px;
+        right: -350px;
       }
 
       @include mixins.xl {
-        right: -150px;
+        right: -380px;
       }
 
       @include mixins.xxl {
-        right: -110px;
+        right: -350px;
+      }
+
+      @include mixins.xxxl {
+        right: -50px;
       }
     }
   }
-
-  // &::after {
-  //   @include mixins.md {
-  //     background: url('../../../public/Contact_lines.svg');
-  //     background-position: 10% 0%;
-  //     background-repeat: no-repeat;
-  //     background-size: auto;
-  //     content: '';
-  //     height: 100%;
-  //     position: absolute;
-  //     width: 100%;
-  //   }
-
-  //   @include mixins.lg {
-  //     background-position: -40% 0%;
-  //   }
-
-  //   @include mixins.xl {
-  //     background-position: -100% 0%;
-  //   }
-
-  //   @include mixins.xxl {
-  //     background-position: 100% 0%;
-  //   }
-  // }
 
   .contact-container {
     display: flex;
@@ -160,9 +139,39 @@
         margin-top: 5rem;
       }
 
-      .contact__data-text {
-        margin: 1rem 0;
-        font-size: clamp(1.6rem, 2.3vw, 2.4rem);
+      @include mixins.xl {
+        display: flex;
+        gap: 3.5rem;
+      }
+
+      .contact__data-image-container {
+        .contact__data-image {
+          width: 220px;
+          height: 220px;
+        }
+      }
+
+      .contact__data-text-container {
+        margin-top: 2.5rem;
+
+        @include mixins.xl {
+          margin-top: 0;
+        }
+
+        .contact__data-name {
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: clamp(1.6rem, 2.3vw, 2.4rem);
+
+          @include mixins.xl {
+            margin: 1.5rem 0;
+          }
+        }
+
+        .contact__data-text {
+          margin: 1rem 0;
+          font-size: clamp(1.6rem, 2.3vw, 2.4rem);
+        }
       }
     }
   }

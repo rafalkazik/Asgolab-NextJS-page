@@ -42,12 +42,22 @@ const Contact = () => {
           </Link>
         </div>
         <div className='contact__data'>
-          <p className='contact__data-text'>+48 504 627 818</p>
-          <p className='contact__data-text'>
-            ul. Poziomkowa 47 <br />
-            43-100 Tychy
-          </p>
-          <p className='contact__data-text'>biuro@asgolab.com.pl</p>
+          <picture className='contact__data-image-container'>
+            <img
+              src='/Profile_photo.png'
+              alt='profile photo'
+              className='contact__data-image'
+            />
+          </picture>
+          <div className='contact__data-text-container'>
+            <p className='contact__data-name'>Joanna Katarzyńska-Goj</p>
+            <p className='contact__data-text'>+48 504 627 818</p>
+            <p className='contact__data-text'>
+              ul. Poziomkowa 47 <br />
+              43-100 Tychy
+            </p>
+            <p className='contact__data-text'>biuro@asgolab.com.pl</p>
+          </div>
         </div>
       </div>
     </div>
