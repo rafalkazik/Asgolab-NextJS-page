@@ -27,10 +27,9 @@ const Hero = () => {
         />
         <div className='hero__content'>
           <h1 className='hero__content-text'>
-            Laboratorium protetyczne specjalizujące{' '}
-            <span className='separator'>się w usługach</span> zakresu
-            nowoczesnej techniki dentystyczne CAD/CAM, znajdujące{' '}
-            <span className='separator'>się w</span> centrum Tychów.
+            Laboratorium protetyczne specjalizujące się w usługach zakresu
+            nowoczesnej techniki dentystyczne CAD/CAM, znajdujące się w centrum
+            Tychów.
           </h1>
           <Link
             to='offer'

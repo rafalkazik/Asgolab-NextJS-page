@@ -28,12 +28,8 @@ const Contact = () => {
         </header>
         <div className='contact__content'>
           <p className='contact__content-text'>
-            Profesjonalizm połączony{' '}
-            <span className='separator'>z precyzją</span>{' '}
-            <span className='separator'>i starannością</span>{' '}
-            <span className='separator'>oraz dbałością</span>{' '}
-            <span className='separator'>o szczegóły</span>{' '}
-            <span className='separator'>to atut</span> naszej pracowni.
+            Profesjonalizm połączony z precyzją i starannością oraz dbałością o
+            szczegóły to atut naszej pracowni.
           </p>
           <Link href='mailto:biuro@asgolab.com.pl'>
             <button className='contact__content-button'>
